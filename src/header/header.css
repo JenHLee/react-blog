@@ -1,0 +1,35 @@
+/*Color set*/
+:root {
+    --font-color: #444;
+}
+
+.header{
+    margin-top: 60px;
+}
+
+.headerTitles{
+    display: flex;
+    flex-direction: column; /*set of flex direction*/
+    align-items: center;
+    font-family: 'Lora', serif;
+    color: var(--font-color);
+}
+
+.headerTitleSm{
+    position: absolute;
+    top: 18%;
+    font-size: 20px;
+}
+
+.headerTitleLg{
+    position: absolute;
+    top: 20%;
+    font-size: 100px;
+}
+
+.headerImg{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    object-fit: cover; /*object is covered(ratio is not changed)*/
+}
