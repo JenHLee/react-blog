@@ -7,7 +7,7 @@ export default function () {
                 <span className="headerTitleSm">React & Node</span>
                 <span className="headerTitleLg">Blog</span>
             </div>
-            <img className="headerImg" src={require("../asset/img/bg0.jpg")} alt="headerImg" />
+            <img className="headerImg" src={require("../../asset/img/bg0.jpg")} alt="headerImg" />
         </div>
     )
 }

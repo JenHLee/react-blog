@@ -35,3 +35,16 @@
     margin-top: 15px;
     cursor: pointer;
 }
+
+.postDesc{
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    margin-top: 15px;
+    overflow: hidden; /*overflow makes hidden*/
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /*show until 4 lines*/
+    -webkit-box-orient: vertical; 
+
+}

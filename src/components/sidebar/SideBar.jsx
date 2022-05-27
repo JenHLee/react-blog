@@ -5,7 +5,7 @@ export default function SideBar() {
         <div className="sidebar">
             <div className="sidebarItem">
                 <span className="sidebarTitle">✦ ABOUT ME ✦</span>
-                <img src={require("../asset/img/aboutme.jpg")} alt="About me"></img>
+                <img src={require("../../asset/img/aboutme.jpg")} alt="About me"></img>
                 <p>Hi, I'm Jennie! High level experience in Graphic Design and Fine Arts. Currently taking a Software Development diploma course, learning to become a full-stack developer.</p>
             </div>
             <div className="sidebarItem">
