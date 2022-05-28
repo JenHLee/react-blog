@@ -1,4 +1,11 @@
+/*Color set*/
+:root {
+    --point-color : #f74c25;
+    --background-color: #f7f6f2;
+}
+
 .home{
     display: flex;
+    background-color: var(--background-color);
     
 }

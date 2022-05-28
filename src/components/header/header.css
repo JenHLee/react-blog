@@ -1,35 +1,47 @@
+@font-face {
+    font-family: 'gaylen';
+    src: url('../../asset/font/gaylen.ttf') format('truetype');
+}
+
 /*Color set*/
 :root {
-    --font-color: #444;
+    --point-color: #f74c25;
+    --background-color: #f7f6f2;
 }
 
-.header{
-    margin-top: 60px;
+.header {
+    /*5, 6, 7, 8 */
+    background-image: url(../../asset/img/bg8.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    height: 350px;
+    padding-bottom: 340px;
+    overflow: hidden;
 }
 
-.headerTitles{
+.headerTitles {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: wrap;
+    text-overflow: hidden;
+}
+.spanTitles {
     display: flex;
-    flex-direction: column; /*set of flex direction*/
-    align-items: center;
-    font-family: 'Lora', serif;
-    color: var(--font-color);
+    padding-left: 40px;
+    /*font-family: 'gaylen';*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 150px;
+    color: var(--point-color);
+    /*animation: moving 10s infinite;*/
 }
 
-.headerTitleSm{
-    position: absolute;
-    top: 18%;
-    font-size: 20px;
-}
+/*
+@keyframes moving {
+    0% {}
 
-.headerTitleLg{
-    position: absolute;
-    top: 20%;
-    font-size: 100px;
+    100% {
+        transform: translate(100%, 0);
+    }
 }
-
-.headerImg{
-    width: 100%;
-    height: auto;
-    margin-top: 80px;
-    object-fit: cover; /*object is covered(ratio is not changed)*/
-}
+*/
