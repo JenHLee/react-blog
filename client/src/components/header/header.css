@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'gaylen';
+    src: url('../../asset/font/gaylen.ttf') format('truetype');
+}
+
+/*Color set*/
+:root {
+    --point-color: #f74c25;
+    --background-color: #f7f6f2;
+}
+
+.header {
+    max-width: 100%;
+    /*5, 6, 7, 8 */
+    background-image: url(../../asset/img/bg8.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    height: 350px;
+    padding-bottom: 340px;
+    overflow: hidden;
+}
+
+.headerTitles {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    overflow: hidden;
+}
+.spanTitles {
+    white-space: nowrap;
+    max-width: 100%;
+    display: flex;
+    padding-left: 40px;
+    /*font-family: 'gaylen';*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 155px;
+    color: var(--point-color);
+    /*animation: moving 10s infinite;*/
+}
+
+/*
+@keyframes moving {
+    0% {}
+
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+*/
