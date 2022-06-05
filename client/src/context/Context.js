@@ -7,7 +7,6 @@ const INITIAL_STATE = {
     error: false,
 };
 
-
 export const Context = createContext(INITIAL_STATE);
 export const ContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(Reducer, INITIAL_STATE);
@@ -29,7 +28,6 @@ export const ContextProvider = ({ children }) => {
     );
 
 };
-
 export default Context;
 /*
 login process

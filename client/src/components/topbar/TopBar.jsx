@@ -5,12 +5,11 @@ import { Context } from "../../context/Context";
 import "./topbar.css";
 
 export default function TopBar() {
-    const {user, dispatch} = useContext(Context);
-    console.log(user.profilePic);
-    console.log(user);
+    const { user, dispatch } = useContext(Context);
+    const PF = "http://localhost:5000/images/";
 
     const handleLogout = () => {
-        dispatch({type: "LOGOUT"});
+        dispatch({ type: "LOGOUT" });
     };
     return (
         <div className='top'>
@@ -35,8 +34,8 @@ export default function TopBar() {
                         <Link className="link" to="/write"> WRITE
                         </Link>
                     </li>{user ? (
-                        <li className="topListItem" id="listItemLast" onClick={handleLogout}>
-                            <span className="link">{user && "LOGOUT"}</span>
+                        <li className="topListItem" id="listItemLast">
+                            <span className="link" onClick={handleLogout}>{user && "LOGOUT"}</span>
                         </li>
                     ) : (
                         <li className="topListItem" id="listItemLast">
@@ -47,23 +46,22 @@ export default function TopBar() {
                 </ul>
             </div>
             <div className="topRight">
-                {
-                    user ?
-                        (
-                            <img className="topImg"
-                                //src={require("../../asset/img/profile.jpg")}
-                                //src={user.profilePic}
-                                src={user.profilePic}
-                                alt="profile" />
-                                ) : (
-                            <ul className="topList">
-                                <li className="topListItem">
-                                    <Link className="link" to="/register">REGISTER</Link>
-                                </li>
-                            </ul>
-                        )
+                {user ? (
+                    <Link to="/settings">
+                        <img className="topImg"
+                            //src={require("../../asset/img/profile.jpg")}
+                            //src={user.profilePic}
+                            src={PF + user.profilePic}
+                            alt="" />
+                    </Link>
+                ) : (
+                    <ul className="topList">
+                        <li className="topListItem">
+                            <Link className="link" to="/register">REGISTER</Link>
+                        </li>
+                    </ul>
+                )
                 }
-
                 <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
