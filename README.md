@@ -9,10 +9,10 @@
 - Pulled Calgary place using Calgary API
 
 ## 📌 Tech Stack
-- React.js
 - MongoDB
-- Node.js
 - Express
+- Node.js
+- React.js
 
 ## :computer: Live Demo
 
