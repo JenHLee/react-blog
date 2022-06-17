@@ -20,22 +20,22 @@
 - React.js
 
 ## :computer: Live Demo
-1. Register / Login
+1. Register / Login <br>
 ![1 register](https://user-images.githubusercontent.com/97131199/174272514-7b8d1d9e-46a4-4f84-a697-3ecdfd865a0f.gif)
  <br>
- User can create account, default profile picture is given.
- Stored Username, Password, Email in MongoDB.
+ User can create account, default profile picture is given.<br>
+ Stored Username, Password, Email in MongoDB.<br>
  
-2. Modify User Information (Setting)
+2. Modify User Information (Setting) <br>
 ![2  modify](https://user-images.githubusercontent.com/97131199/174273005-cfb37239-c30b-4543-974d-b15fbd455585.gif)
-User can change/upload the profile picture.
-User can edit Username, Email, and Password. 
-Changed Userinfo will be stored in MongoDB.
+User can change/upload the profile picture.<br>
+User can edit Username, Email, and Password. <br>
+Changed Userinfo will be stored in MongoDB.<br>
 
-3. Posting (Publish / Update / Delete)
+3. Posting (Publish / Update / Delete) <br>
 ![3 posting](https://user-images.githubusercontent.com/97131199/174273657-61449e6e-5a55-43ed-a207-952866fcace2.gif)
-User can publish the posting, upload the posting picture.
-If user is same, user can update, delete posting.
+User can publish the posting, upload the posting picture.<br>
+If user is same, user can update, delete posting.<br>
 
 
 
