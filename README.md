@@ -1,12 +1,17 @@
-# ⭐ <Jen's React Blog> 
-- This web application is built for blogging. 
-- Users can register using ID and Password to Login, and Logout.  
+# ⭐ <Jen's React Blog> -- will be deployed soon!
+- This web application is built for personal blogging. This React blog can be used for sharing information about technologies, and it can be published.
+- Users can share their opinions, also users can use this blog as a portfolio website. 
 
 ## 🌱 Features 
-- Save username, password, profile picture, and email in Mongo DB. 
+- Save username, encrypted password, reference of profile picture, and email in Mongo DB. 
+- username, password, and email is required to sign-up.
+- Currently, post pictures, and profile pictures will be stored local repository.
+- Users can register using username(ID) and Password(PW) to Login, and Logout.
+- Users can publish, update, and delete personal post using posting-page.
+- Users can change the profile picture, modify user information.
 
 ## ✏️ Core Features
-- Pulled Calgary place using Calgary API
+- REST API
 
 ## 📌 Tech Stack
 - MongoDB
