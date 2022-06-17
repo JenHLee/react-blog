@@ -1,6 +1,5 @@
 # ⭐ Jen's React Blog - will be deployed soon!
-- This web application is built for personal blogging. This React blog can be used for sharing information about technologies, <br>and it can be published.
-- Users can share their opinions, also users can use this blog as a portfolio website. 
+- This web application is built for personal blogging. <br>This React blog can be used for sharing information about technologies, <br>and it can be published. <br>Users can share their opinions, also users can use this blog as a portfolio website. 
 
 ## 🌱 Features 
 - Save username, encrypted password, reference of profile picture, and email in <strong>Mongo DB</strong>. 
