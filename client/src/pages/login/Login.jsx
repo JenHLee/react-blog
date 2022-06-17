@@ -19,6 +19,7 @@ export default function Login() {
                 password: passwordRef.current.value,
             });
             dispatch({type:"LOGIN_SUCCESS", payload: res.data});
+            
         }catch(err){
             dispatch({type:"LOGIN_FAILURE"});
         }
@@ -29,10 +30,10 @@ export default function Login() {
             <form className="loginForm" onSubmit={handleSubmit}>
                 <span className="loginTitle">Login</span>
                 <label>Username</label>
-                <input type="text" className="loginInput" placeholder="Enter your username..."
+                <input key="{userRef}" type="text" className="loginInput" placeholder="Enter your username..."
                 ref={userRef} />
                 <label>Password</label>
-                <input type="password" className="loginInput" placeholder="Enter your password..."
+                <input key="{passwordRef}" type="password" className="loginInput" placeholder="Enter your password..."
                 ref={passwordRef} />
                 <button className="loginButton" type="submit" disabled={isFetching}>Login</button>
             </form>

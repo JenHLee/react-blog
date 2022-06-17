@@ -46,7 +46,8 @@ export default function TopBar() {
                 </ul>
             </div>
             <div className="topRight">
-                {user ? (
+                {user ? 
+                    user.profilePic ? (
                     <Link to="/settings">
                         <img className="topImg"
                             //src={require("../../asset/img/profile.jpg")}
@@ -55,6 +56,12 @@ export default function TopBar() {
                             alt="" />
                     </Link>
                 ) : (
+                    <Link to="/settings">
+                        <img className="topImg"
+                            src={require("../../asset/img/defaultProfilePic.jpg")}
+                            alt="" />
+                    </Link>
+                    ) : (
                     <ul className="topList">
                         <li className="topListItem">
                             <Link className="link" to="/register">REGISTER</Link>

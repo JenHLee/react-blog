@@ -1,11 +1,20 @@
+/*Color set*/
+:root {
+    --point-color : #f74c25;
+    --background-color: #f7f6f2;
+    --topbar-background-color: #eed4af;
+}
+
+
 .write {
     padding-top: 50px;
+    background-color: var(--topbar-background-color);
 }
 
 .writeImg{
     margin-left: 150px;
     width: 70vw;
-    height: 250px;
+    height: 400px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -34,10 +43,12 @@
 }
 
 .writeInput {
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     border: none;
-    padding: 20px;
+    padding: 50px;
     width: 70vw;
+    background-color: var(--topbar-background-color);
 }
 
 .writeInput:focus {
@@ -58,4 +69,14 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
+    background-color: #f74c25;
+    color: #f7f6f2;
+    font-weight: bold;
+}
+
+.writeSubmit:hover{
+    background-color:  #f7f6f2;
+    color:#f74c25; 
+    cursor: pointer;
+
 }

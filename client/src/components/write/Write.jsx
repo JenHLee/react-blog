@@ -7,7 +7,7 @@ export default function Write() {
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     const [file, setFile] = useState(null);
-    const { user } = useContext(Context);
+    const {user} = useContext(Context);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -67,8 +67,6 @@ export default function Write() {
                     ></textarea>
                 </div>
                 <button className="writeSubmit" type="submit">Publish</button>
-
-
             </form>
         </div>
     );

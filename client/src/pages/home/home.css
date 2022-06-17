@@ -6,6 +6,6 @@
 
 .home{
     display: flex;
-    background-color: var(--background-color);
-    
+    background-color: #eed4af;
+    font-family: 'Roboto', sans-serif;
 }

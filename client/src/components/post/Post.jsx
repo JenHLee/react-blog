@@ -13,12 +13,12 @@ export default function post({post}) {
                     ))}
                 </div>
                 <Link to={`/post/${post._id}`} className="link">
-                <span className="postTitle">{post.title}</span>
+                <span className="postTitle" key={post.title} >{post.title}</span>
                 </Link>
                 <hr />
                 <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
             </div>
-                <p className="postDesc">{post.desc}</p>
+                <p className="postDesc" >{post.desc}</p>
         </div>
     );
 }

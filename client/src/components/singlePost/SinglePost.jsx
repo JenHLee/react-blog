@@ -23,16 +23,17 @@ export default function SinglePost() {
             setDesc(res.data.desc);
         };
         getPost();
-    }, [path]);
+    }, [path]); //[parameter]
 
-    const handleDelete = async () => {
+
+    const handleDelete = () => {
         try {
-            await axios.delete(`/posts/${post._id}`, {
+            axios.delete(`/posts/${post._id}`, {
                 data: { username: user.username },
             });
             window.location.replace("/");
         } catch (err) { }
-    };
+    }; //no need to use async, await 
 
     const handleUpdate = async () => {
         try {
@@ -42,7 +43,7 @@ export default function SinglePost() {
                 desc,
             });
             //window.location.reload();
-            setUpdateMode(false);
+            setUpdateMode(false); //after finish the update setUpdateMode(false)
         
         } catch (err) { }
     };

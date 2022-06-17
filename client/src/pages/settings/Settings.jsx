@@ -35,9 +35,10 @@ export default function Settings() {
         try {
             const res = await axios.put("/users/" + user._id, updatedUser);
             setSuccess(true);
-            dispatch({ type: "UPDATE_SUCCESS", payload : res.data});
-        } catch (err) { 
-            dispatch({type: "UPDATE_FAILURE"});}
+            dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
+        } catch (err) {
+            dispatch({ type: "UPDATE_FAILURE" });
+        }
     };
 
 
@@ -46,16 +47,27 @@ export default function Settings() {
             <div className="settingsWrapper">
 
                 <div className="settingsTitle">
-                    <span className="settingsUpdateTitle">Update Your Account</span>
+                    <span className="settingsUpdateTitle">✦ Update Your Account ✦</span>
                     <span className="settingsDeleteTitle">Delete Account</span>
                 </div>
                 <form className="settingsForm" onSubmit={handleSubmit}>
                     <label>Profile Picture</label>
                     <div className="settingsPP">
-                        <img className="topImg"
-                            src={file ?
-                                URL.createObjectURL(file) : PF + user.profilePic}
-                            alt="" />
+                        {file ? (
+                            <img className="topImg"
+                                src={URL.createObjectURL(file)}
+                                alt="" />
+                        ) : user.profilePic ? (
+
+                            <img className="topImg"
+                                src={PF + user.profilePic}
+                                alt="" />
+                        ) : (
+                            <img className="topImg"
+                                src={require("../../asset/img/defaultProfilePic.jpg")}
+                                alt="" />
+                        )}
+
                         <label htmlFor="fileInput">
                             <i className="settingsPPIcon fa-solid fa-circle-user"></i>
                         </label>

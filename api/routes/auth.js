@@ -27,19 +27,27 @@ router.post("/register", async (req, res) => {
 
 //LOGIN
 router.post("/login", async(req, res) => {
+    console.log("login-backend");
+    console.log("req username:" + req.body.username);
+    console.log("req password:" + req.body.password);
     try {
         //try to find username in Mongo DB (findOne means username is only one)
+        console.log("try");
         const user = await User.findOne({username: req.body.username});
+        console.log("found");
         !user && res.status(400).json("Wrong Credentials!");
         //if there is no user inside our DB, show 400 error code with Wrong Credentials! message.
 
         const validated = await bcrypt.compare(req.body.password, user.password);
         !validated && res.status(400).json("Wrong Credentials!");
+        //validate is not working -> return -> try console.log line by line
 
         const {password, ...others} = user._doc;
         res.status(200).json(others);
+        console.log("200");
     }catch(err){
         res.status(500).json(err);
+        console.log("500");
     }
 });
 

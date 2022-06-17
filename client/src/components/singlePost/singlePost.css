@@ -1,3 +1,12 @@
+/*Color set*/
+:root {
+    --point-color: #f74c25;
+    --background-color: #f7f6f2;
+    --topbar-background-color: #eed4af;
+    --key-font: 'Tiro Bangla', serif;
+    --main-font: 'Roboto', sans-serif;
+}
+
 .singlePost{
     flex: 9;
 }
@@ -10,19 +19,25 @@
 }
 
 .singlePostImg{
+    margin-bottom: 20px;
     width: 70vw;
-    height: 250px;
+    height: 400px;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .singlePostTitle{
+    
+    padding-bottom: 30px;
+    font-family: var(--key-font);
     text-align: center;
     margin: 10px;
     font-size: 28px;
 }
 
 .singlePostTitleInput{
+    
+    font-family: var(--main-font);
     text-align: center;
     margin: 10px;
     font-size: 28px;
@@ -46,9 +61,13 @@
 
 #singlePostIcon2{
     margin-left: 10px;
+    margin-right: 30px;
 }
 
 .singlePostInfo{
+    
+    margin-right: 35px;
+    font-family: var(--main-font);
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -56,6 +75,8 @@
 }
 
 .singlePostDesc {
+    
+    font-family: var(--main-font);
     color: gray;
     font-size: 18px;
     line-height: 25px;

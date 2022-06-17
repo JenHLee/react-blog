@@ -1,5 +1,19 @@
+/*Color set*/
+:root {
+    --point-color : #f74c25;
+    --background-color: #f7f6f2;
+    --topbar-background-color: #eed4af;
+    --key-font: 'Tiro Bangla', serif;
+    --main-font: 'Roboto', sans-serif;
+}
+
 .settings{
     display: flex;
+    background-color: var(--topbar-background-color);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    color: var(--point-color);
 }
 
 .settingsWrapper{
@@ -8,9 +22,11 @@
 }
 
 .settingsTitle{
+    font-family: var(--key-font);
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .settingsUpdateTitle{
@@ -19,11 +35,19 @@
 }
 
 .settingsDeleteTitle{
-    font-size: 12px;
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
 }
 
+.settingsDeleteTitle:hover{
+    color: #6a1c0a;
+    font-weight: bold;
+}
+
 .settingsForm{
+    font-family: var(--key-font);
     display: flex;
     flex-direction: column;
 }
@@ -62,7 +86,12 @@ margin-top: 20px;
     margin: 10px 0;
     height: 30px;
     border: none;
+    padding-left: 2px;
+    font-size: 15px;
     border-bottom: 1px solid lightgray;
+    background-color: var(--topbar-background-color);
+    border-bottom: var(--point-color) solid 1px;
+   
 }
 
 .settingsSubmit{
@@ -72,7 +101,14 @@ margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    cursor: pointer;
+    cursor: pointer;  background-color: #f74c25;
+    color: #f7f6f2;
+    font-weight: bold;
 }
 
+.settingsSubmit:hover{
+    background-color:  #f7f6f2;
+    color:#f74c25; 
+    cursor: pointer;
 
+}
