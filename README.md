@@ -20,4 +20,7 @@
 - React.js
 
 ## :computer: Live Demo
+![1 register](https://user-images.githubusercontent.com/97131199/174272514-7b8d1d9e-46a4-4f84-a697-3ecdfd865a0f.gif)
+ <br>
+ Stored Username, Password, Email in MongoDB.
 
