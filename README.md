@@ -5,7 +5,7 @@
 ## 🌱 Features 
 - Save username, encrypted password, reference of profile picture, and email in <strong>Mongo DB</strong>. 
 - Username, password, and email is required to sign-up.
-- Currently, post pictures, and profile pictures will be stored local repository.
+- Currently, post pictures, and profile pictures will be stored <strong>Local Repository</strong>.
 - Users can register using username(ID) and Password(PW) to Login, and Logout.
 - Users can publish, update, and delete personal post using posting-page through <strong>REST API.</strong>
 - Users can change the profile picture, modify user information.
