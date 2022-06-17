@@ -3,7 +3,7 @@
 - Users can share their opinions, also users can use this blog as a portfolio website. 
 
 ## 🌱 Features 
-- Save username, encrypted password, reference of profile picture, and email in Mongo DB. 
+- Save username, encrypted password, reference of profile picture, and email in <strong>Mongo DB</strong>. 
 - username, password, and email is required to sign-up.
 - Currently, post pictures, and profile pictures will be stored local repository.
 - Users can register using username(ID) and Password(PW) to Login, and Logout.
