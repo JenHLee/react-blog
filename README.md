@@ -34,7 +34,7 @@ Changed Userinfo will be stored in MongoDB.<br><br>
 - Posting (Publish / Update / Delete) <br>
 ![3 posting](https://user-images.githubusercontent.com/97131199/174273657-61449e6e-5a55-43ed-a207-952866fcace2.gif)<br>
 User can publish the posting, upload the posting picture.<br>
-If user is same, user can update, delete posting.<br><br>
+If user is same, user can update the title, and context of posting, and delete posting.<br><br>
 
 
 
