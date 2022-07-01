@@ -93,6 +93,7 @@
     color: gray;
     font-size: 18px;
     line-height: 25px;
+    height: 400px;
 }
 
 .singlePostDescInput:focus{

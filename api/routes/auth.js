@@ -35,19 +35,28 @@ router.post("/login", async(req, res) => {
         console.log("try");
         const user = await User.findOne({username: req.body.username});
         console.log("found");
-        !user && res.status(400).json("Wrong Credentials!");
+        //!user && res.status(400).json("Wrong user!");
         //if there is no user inside our DB, show 400 error code with Wrong Credentials! message.
+        if (!user) {
+            return res.status(400).json("Wrong user!");
+        }
 
         const validated = await bcrypt.compare(req.body.password, user.password);
-        !validated && res.status(400).json("Wrong Credentials!");
+        if (!validated ){
+            return res.status(400).json("Wrong Password!");
+        }
+        //!validated && res.status(400).json("Wrong password!");
         //validate is not working -> return -> try console.log line by line
 
         const {password, ...others} = user._doc;
-        res.status(200).json(others);
+        return res.status(200).json(others);
         console.log("200");
     }catch(err){
-        res.status(500).json(err);
-        console.log("500");
+        console.log("error is inside catch");
+        //res.status(500).json(err);
+        console.log("error message:" + err);
+        //res.json(err); 
+        
     }
 });
 
